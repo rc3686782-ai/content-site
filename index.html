@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Clone Homepage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      margin: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #fff;
+      border-bottom: 1px solid #dbdbdb;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    .navbar h1 {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 32px;
+      margin: 0;
+    }
+
+    .navbar input {
+      padding: 5px;
+      border: 1px solid #dbdbdb;
+      border-radius: 4px;
+    }
+
+    /* Feed */
+    .feed {
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    .post {
+      background-color: #fff;
+      border: 1px solid #dbdbdb;
+      margin-bottom: 20px;
+      border-radius: 4px;
+    }
+
+    .post-header {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .post-header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .post-header span {
+      font-weight: bold;
+    }
+
+    .post video, .post img {
+      width: 100%;
+      display: block;
+    }
+
+    .post-footer {
+      padding: 10px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 5px;
+    }
+
+    .actions span {
+      cursor: pointer;
+    }
+
+    .likes {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .caption {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>Instagram</h1>
+    <input type="text" placeholder="Search">
+    <div>🏠 ❤️ 💬</div>
+  </div>
+
+  <!-- Feed -->
+  <div class="feed">
+    <!-- Post 1 -->
+    <div class="post">
+      <div class="post-header">
+        <img src="https://via.placeholder.com/40" alt="profile">
+        <span>user_one</span>
+      </div>
+      <video controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="post-footer">
+        <div class="actions">
+          <span>❤️</span>
+          <span>💬</span>
+          <span>📤</span>
+        </div>
+        <div class="likes">120 likes</div>
+        <div class="caption"><b>user_one</b> Enjoying the sunset 🌅</div>
+      </div>
+    </div>
+
+    <!-- Post 2 -->
+    <div class="post">
+      <div class="post-header">
+        <img src="https://via.placeholder.com/40" alt="profile">
+        <span>user_two</span>
+      </div>
+      <video controls>
+        <source src="sample-video2.mp4" type="video/mp4">
+      </video>
+      <div class="post-footer">
+        <div class="actions">
+          <span>❤️</span>
+          <span>💬</span>
+          <span>📤</span>
+        </div>
+        <div class="likes">89 likes</div>
+        <div class="caption"><b>user_two</b> Workout vibes 💪</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
